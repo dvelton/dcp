@@ -71,6 +71,18 @@ DCP is plain text. It works with any AI tool that reads document content: Micros
 
 DCP is a convention, not software. It works through document templates — Word templates (.dotx), Google Docs templates, markdown files, or any other format that supports text. Lawyers already know how to use templates. IT doesn't need to approve anything. There is nothing to install, configure, or maintain.
 
+## Keeping Policies Current
+
+DCP blocks are self-contained by design — the instructions travel with the document, no dependencies, no network access required. But policies change. When a legal team updates its NDA checklist to add a new regulatory requirement, that update only reaches documents created after the change. The 50 NDAs already in circulation still reflect the old policy.
+
+DCP solves this without breaking the self-contained principle. Three optional fields — `Policy Source`, `Policy Version`, and `Policy As-Of` — record where the embedded policy came from and when it was last synced. These fields are metadata, not dependencies. If an AI tool can reach the policy source, it can check whether the document's policy is current and alert the user. If it can't, the embedded DCP block works exactly as it always has.
+
+The canonical policies themselves live in standalone policy files (`.dcp` files) maintained centrally by the team — in a shared repository, a SharePoint library, or wherever the team manages its standards. When the team updates a policy file, batch propagation tooling can scan a document library, identify documents with stale DCP blocks, and update them — with appropriate approval controls based on document status. Drafts can be updated automatically. Documents under active review get flagged. Executed agreements are left alone.
+
+DCP blocks that use policy governance operate in two layers. The base layer (review checklist, drafting standards, constraints) comes from the canonical policy and can be refreshed by propagation tooling. The document-specific layer (prefixed with "Additional") contains items unique to that particular document or deal, and is never overwritten. This separation ensures that a team-wide policy update doesn't destroy the deal-specific notes a lawyer added to a particular contract.
+
+See the [specification](specification.md) for full details on policy governance fields, policy files, layered DCP blocks, and batch propagation.
+
 ## Adopting DCP
 
 ### For Individual Lawyers
@@ -146,6 +158,9 @@ A prompt is typed once, used once, and lost. A DCP block is embedded in the docu
 
 **Can I use DCP outside of legal work?**
 Absolutely. The protocol is document-agnostic. Any profession that produces structured documents — compliance, finance, HR, policy, procurement — can benefit from embedding AI context in their templates. Legal is a natural starting point because the documents are high-stakes and the standards are well-defined.
+
+**What happens when our team updates its policies?**
+DCP supports optional policy governance fields that track where a document's embedded policy came from and when it was last synced. Batch propagation tooling can scan a document library, identify documents with stale policies, and update the base policy fields while preserving any document-specific additions. The DCP block always remains fully self-contained — the policy source is an update channel, not a runtime dependency. See the [specification](specification.md) for details.
 
 ## Specification
 

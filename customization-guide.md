@@ -152,3 +152,83 @@ When rolling out customized DCP templates to your team:
 **Forgetting the Constraints field.** Without explicit constraints, AI may restructure documents you're reviewing, modify defined terms without flagging the change, or remove provisions rather than suggesting alternatives. If your workflow has "never do this" rules, put them in Constraints.
 
 **Not testing before distributing.** A checklist that sounds right in theory may generate false positives or miss real issues in practice. Always test with real documents before team-wide rollout.
+
+---
+
+## Centralized Policy Management
+
+As teams mature their use of DCP, the question shifts from "how do I customize a template?" to "how do I keep policies current across all the documents we've already created?" DCP's policy governance features address this without breaking the self-contained principle.
+
+### Setting Up a Canonical Policy Source
+
+Designate a central location for your team's canonical policy files — a shared repository, a SharePoint library, or a folder in your document management system. Create a `.dcp` policy file for each document type your team uses.
+
+A policy file contains only the team-wide standards — the review checklist, drafting standards, and constraints that apply to every document of that type. It does not contain document-specific fields like Audience or Jurisdiction.
+
+```
+════════════════════════════════════════════════════════════
+DCP POLICY — NDA
+
+Version:          nda-v4.1
+Last Updated:     2026-02-15
+Owner:            Commercial Transactions
+
+Review Checklist:
+□ Verify mutual confidentiality obligations
+□ Check definition of "Confidential Information" for overbreadth
+□ Confirm standard carve-outs are present
+□ Flag non-compete clauses exceeding 12 months
+
+Drafting Standards:
+- Formal contractual tone
+- Define all capitalized terms on first use
+
+Constraints:
+- Do not modify defined terms without flagging the change
+════════════════════════════════════════════════════════════
+```
+
+Treat policy files like any other governed document: version them, track changes, and have a senior team member approve updates before they take effect.
+
+### Adding Policy Governance to DCP Blocks
+
+When creating or updating templates, include the three policy governance fields:
+
+```
+Policy Source:    contoso/legal-policies/nda-policy
+Policy Version:   nda-v4.1
+Policy As-Of:     2026-02-15
+```
+
+These fields tell propagation tooling where to check for updates and what version is currently embedded. They don't change how the DCP block works — the block is fully self-contained regardless.
+
+### Separating Base Policy from Document-Specific Items
+
+Use the "Additional" prefix to distinguish items that are unique to a specific document from items that come from the canonical policy:
+
+- `Review Checklist` — items from the canonical policy (refreshable)
+- `Additional Checklist Items` — items specific to this document (never overwritten)
+- `Constraints` — from the canonical policy (refreshable)
+- `Additional Constraints` — specific to this document (never overwritten)
+
+This separation is what makes batch propagation safe. When the team updates the canonical NDA checklist, propagation tooling can replace the base `Review Checklist` with the current version without touching the deal-specific items a lawyer added under `Additional Checklist Items`.
+
+### Batch Propagation in Practice
+
+When your team updates a policy, the update needs to reach existing documents. Batch propagation tooling scans a document library and updates DCP blocks that reference the changed policy. A practical workflow:
+
+1. **Update the policy file.** Add the new checklist item, adjust the threshold, or revise the drafting standard. Bump the version identifier.
+
+2. **Run the propagation tool.** Scan the document library for documents whose `Policy Source` matches the updated policy and whose `Policy Version` is outdated.
+
+3. **Review the output.** The tool should produce a report: which documents would be updated, what specifically changed, and which documents were skipped based on their `Status` field (e.g., executed agreements are never modified).
+
+4. **Approve and apply.** Review the report, approve the updates, and let the tool replace the base policy fields in the affected documents.
+
+### Scoping Updates by Document Status
+
+Not every document should be updated when a policy changes. Use the `Status` field to scope propagation:
+
+- **Draft** — Safe to update automatically or with minimal review.
+- **Under Review** — Flag for the assigned lawyer. A policy change during active negotiation may need to be handled carefully.
+- **Final / Executed** — Do not update. These are historical records. If the document needs to be reopened, the lawyer can manually sync the policy at that point.
