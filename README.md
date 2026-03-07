@@ -2,7 +2,7 @@
 
 DCP is an open standard for embedding AI operating instructions directly into documents. A DCP block tells any AI tool — Microsoft 365 Copilot, ChatGPT, Claude, GitHub Copilot — exactly how to work with the document: what it is, who it's for, what to check, and what standards to apply.
 
-DCP is to documents what MCP is to models: a shared protocol that makes AI useful without setup. DCP content travels along with the document, so specifications are preserved.
+DCP is to documents what MCP is to models: a shared protocol that makes AI useful without setup. DCP content travels along with the document, so specifications are preserved. Legal or other teams can design and embed policy directly into documents, which becomes more and more useful as agents proliferate in large organizations. 
 
 ---
 
