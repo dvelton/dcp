@@ -98,17 +98,34 @@ That's it. No tools, no accounts, no setup.
 
 ## Included Templates
 
-This repository includes ready-to-use DCP templates for common legal document types:
+This repository includes ready-to-use DCP templates across legal and business document types. Each template includes a complete DCP block with document-type-specific checklists and drafting standards, followed by a document skeleton showing the expected structure.
+
+### Legal Templates
 
 | Template | Description |
 |----------|-------------|
 | [Non-Disclosure Agreement](templates/nda.md) | Mutual and unilateral NDA review and drafting |
+| [Data Processing Agreement](templates/dpa.md) | GDPR-aligned DPA with Article 28 checklist |
 | [Legal Memo](templates/legal-memo.md) | Internal legal analysis and recommendations |
 | [Executive Brief](templates/executive-brief.md) | High-level summaries for leadership decision-making |
 | [Privacy Review](templates/privacy-review.md) | Product and feature privacy assessments |
 | [Contract Review](templates/contract-review.md) | Third-party agreement review and redlining |
+| [Vendor Security Assessment](templates/vendor-assessment.md) | Vendor risk evaluation and security review |
 
-Each template includes a complete DCP block with document-type-specific checklists and drafting standards, followed by a document skeleton showing the expected structure.
+### Cross-Domain Templates
+
+| Template | Description |
+|----------|-------------|
+| [Compliance Audit](templates/compliance-audit.md) | Regulatory and policy compliance audit reporting |
+| [RFP Response](templates/rfp-response.md) | Structured response to requests for proposal |
+
+## Examples
+
+See the [before/after comparison](examples/before-after.md) for a side-by-side demonstration of what DCP changes in practice — same document, same prompt, dramatically different AI output.
+
+## Customization
+
+See the [customization guide](customization-guide.md) for detailed guidance on adapting DCP templates for your team: writing effective checklists, calibrating drafting standards, and deploying across a team.
 
 ## Frequently Asked Questions
 
@@ -133,6 +150,10 @@ Absolutely. The protocol is document-agnostic. Any profession that produces stru
 ## Specification
 
 See [specification.md](specification.md) for the full DCP block format, field definitions, and placement guidelines.
+
+## Contributing
+
+DCP is open to contributions — new templates, improvements to existing templates, and extensions to the specification. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
