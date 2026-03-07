@@ -1,6 +1,6 @@
 # Document Context Protocol (DCP)
 
-**DCP** is an open standard for embedding AI operating instructions directly into documents. A DCP block tells any AI tool — Microsoft 365 Copilot, ChatGPT, Claude, GitHub Copilot — exactly how to work with the document: what it is, who it's for, what to check, and what standards to apply.
+DCP is an open standard for embedding AI operating instructions directly into documents. A DCP block tells any AI tool — Microsoft 365 Copilot, ChatGPT, Claude, GitHub Copilot — exactly how to work with the document: what it is, who it's for, what to check, and what standards to apply.
 
 DCP is to documents what MCP is to models: a shared protocol that makes AI useful without setup.
 
@@ -8,9 +8,9 @@ DCP is to documents what MCP is to models: a shared protocol that makes AI usefu
 
 ## The Problem
 
-When lawyers use AI, they start every interaction from scratch. They explain the document type, specify the audience, list what to check for, describe the tone they want, and then correct the output that doesn't meet professional standards. That context is lost between sessions. It's never shared with colleagues. And the institutional knowledge that makes a senior lawyer valuable — the checklists, the instincts, the "always check for this" — stays locked in individual heads.
+When lawyers use AI, they often start interaction from scratch. They explain the document type, specify the audience, list what to check for, describe the tone they want, and then correct the output that doesn't meet professional standards. That context is often lost between sessions. It's never shared with colleagues. And the institutional knowledge that makes a senior lawyer valuable: the checklists, the instincts, the "always check for this", these stay locked in individual heads.
 
-The result: AI output that requires heavy editing, inconsistent quality across a team, and no leverage from the expertise that experienced lawyers have accumulated.
+The result: AI output that requires editing, inconsistent quality across a team, and no leverage from the expertise that experienced lawyers have accumulated.
 
 ## How DCP Works
 
@@ -61,7 +61,7 @@ Drafting standards are encoded in the document itself. Output matches the expect
 
 ### 4. Institutional Knowledge, Made Portable
 
-The expertise that makes experienced lawyers valuable — "always check for this in a DPA," "flag this pattern in vendor agreements," "structure privacy reviews this way" — is captured in the DCP block. When you share the document, you share the knowledge. When a junior lawyer uses the template, they benefit from senior-level review criteria from day one.
+The expertise that makes experienced lawyers valuable — "always check for this in a DPA," "flag this pattern in vendor agreements," "structure privacy reviews this way" — is captured in the DCP block. When you share the document, you share the knowledge. The context travels with the document. When a junior lawyer uses the template, they benefit from senior-level review criteria from day one.
 
 ### 5. Tool-Agnostic
 
@@ -94,7 +94,7 @@ That's it. No tools, no accounts, no setup.
 1. Establish organization-wide DCP standards through your existing template governance process.
 2. Define required fields and checklists by document type.
 3. Distribute DCP-enabled templates through your document management infrastructure.
-4. Train teams on the standard — it's a five-minute explanation, not a technology rollout.
+4. Train teams on the standard: it's a five-minute explanation, not a technology rollout.
 
 ## Included Templates
 
@@ -136,4 +136,4 @@ See [specification.md](specification.md) for the full DCP block format, field de
 
 ## License
 
-This work is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it, adapt it, share it. Attribution appreciated.
+This work is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it, adapt it, share it. 
