@@ -55,11 +55,11 @@ AI knows it's working on an NDA, a data processing agreement, or an executive br
 
 Every DCP block includes a review checklist tailored to the document type. When a lawyer asks AI to review a contract, the AI checks for missing provisions, flags non-standard terms, and applies the team's quality standards without being prompted. The checklist is visible to the lawyer too — it's a shared source of truth.
 
-### 3. Consistent Professional Voice
+### 3. Consistent Voice
 
 Drafting standards are encoded in the document itself. Output matches the expected tone and style for the document type: formal and precise for contracts, direct and action-oriented for executive briefs, accessible and clear for customer-facing materials. No more editing AI output from "helpful chatbot" into professional legal writing.
 
-### 4. Institutional Knowledge, Made Portable
+### 4. Institutional Knowledge
 
 The expertise that makes experienced lawyers valuable — "always check for this in a DPA," "flag this pattern in vendor agreements," "structure privacy reviews this way" — is captured in the DCP block. When you share the document, you share the knowledge. The context travels with the document. When a junior lawyer uses the template, they benefit from senior-level review criteria from day one.
 
