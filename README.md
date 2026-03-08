@@ -131,7 +131,7 @@ DCP is open to contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guideli
 
 ## Take It Further: DCP-MCP
 
-DCP travels with your document. DCP-MCP brings your policies/governance to life and enables deviation tracking.
+DCP travels with your document. DCP-MCP propagates your policies and governance at scale and enables deviation tracking.
 
 The [dcp-mcp](/dcp-mcp) companion server exposes your DCP templates as live MCP resources. Connect any MCP-compatible AI client once, and your AI has authoritative, versioned access to every policy in your library, locally or across your whole team.
 
