@@ -34,6 +34,9 @@ Drafting Standards:
 - Define all capitalized terms on first use
 - Include standard boilerplate (severability, waiver, entire agreement)
 - Number all sections and subsections
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 ```
 
