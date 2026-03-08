@@ -65,4 +65,4 @@ Be professional, be constructive, be respectful. This project exists to make pro
 
 ## License
 
-By contributing, you agree that your contributions will be released under the same [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license as the rest of this project.
+By contributing, you agree that your contributions will be released under the same [MIT](LICENSE) license as the rest of this project.

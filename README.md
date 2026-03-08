@@ -128,4 +128,4 @@ DCP is open to contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guideli
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+[MIT](LICENSE)
