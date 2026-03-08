@@ -81,8 +81,37 @@ For team-wide adoption, save customized templates as Word templates (.dotx) in y
 
 | Template | Description |
 |----------|-------------|
+| [Technical Specification](templates/technical-spec.md) | Engineering design documents and architecture proposals |
+| [Project Proposal](templates/project-proposal.md) | New project or initiative proposals for leadership approval |
+| [Incident Report](templates/incident-report.md) | Post-incident documentation for outages, security events, and safety incidents |
+| [Policy Document](templates/policy-document.md) | Organizational policies (IT, HR, security, compliance) |
 | [Compliance Audit](templates/compliance-audit.md) | Regulatory and policy compliance audit reporting |
 | [RFP Response](templates/rfp-response.md) | Structured response to requests for proposal |
+
+### Word Templates
+
+Pre-formatted Word (.docx) versions are available in [`templates/word/`](templates/word/) for the most commonly used document types. Open them in Word, save as a Word template (.dotx) in your shared template library, and your team can start creating DCP-enabled documents immediately.
+
+## Tools
+
+### DCP Validator
+
+A Python script that checks whether a document's DCP block is well-formed. No dependencies beyond Python 3.
+
+```
+python tools/validate-dcp.py document.md
+
+# Validate multiple files
+python tools/validate-dcp.py templates/*.md
+
+# Machine-readable output
+python tools/validate-dcp.py --json document.md
+
+# Exit code only (for CI pipelines)
+python tools/validate-dcp.py --quiet document.md
+```
+
+The validator checks for correct delimiters, the required header line, required fields (Document Type and Audience), proper checklist notation, and structural issues like missing closing delimiters.
 
 ## Examples
 
