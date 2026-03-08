@@ -41,9 +41,9 @@ When a lawyer (or anyone) opens this document and asks AI to "review section 3" 
 
 ## Why This Is Useful
 
-The document carries its own instructions. AI knows it's working on an NDA (not just "a legal document") and applies the appropriate review criteria, structure, and tone. The review checklist acts as built-in quality control: AI checks for missing provisions and flags non-standard terms against the team's actual standards, not generic ones.
+The document carries its own instructions. AI applies the appropriate review criteria. The review checklist acts as built-in quality control: AI checks for missing provisions and flags non-standard terms against the team's actual standards, not generic ones. The team can centrally manage these underlying standards across a huge organization, at scale. 
 
-When you share the document, you share the expertise. A junior lawyer working from a DCP-enabled template gets the benefit of senior-level review criteria from day one. The institutional knowledge that usually stays in people's heads ("always check for this in a DPA," "flag this pattern in vendor agreements") gets encoded in the document itself.
+When you share the document, you share the expertise. Anyone using AI to work from a DCP-enabled template gets the benefit of senior-level review criteria from day one. The institutional knowledge that usually stays in people's heads ("always check for this in a DPA," "flag this pattern in vendor agreements") gets encoded in the document itself.
 
 Because DCP blocks are plain text, they work with any AI tool that reads document content. No vendor dependency, no integration work.
 
