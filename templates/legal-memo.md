@@ -24,6 +24,9 @@ Drafting Standards:
 - Keep paragraphs short — prefer 3-4 sentences maximum
 - Use numbered lists for options and bullet points for supporting detail
 - Bold key conclusions and risk ratings for scanability
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

@@ -39,6 +39,9 @@ Drafting Standards:
 - Distinguish between "must resolve before engagement" and "accept
   with contractual mitigation"
 - Include a clear disposition: Approved / Conditionally Approved / Not Approved
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

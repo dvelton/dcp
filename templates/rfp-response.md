@@ -41,6 +41,9 @@ Constraints:
   are subject to mutual agreement
 - Do not disclose proprietary technical architecture details beyond what
   is necessary to answer the question
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

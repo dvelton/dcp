@@ -64,6 +64,7 @@ Teams may add any fields that support their workflow:
 | **Policy Source** | Identifier or location of the canonical policy this DCP block was derived from. | contoso/legal-policies/nda-policy, https://sharepoint.contoso.com/legal/policies/nda.dcp |
 | **Policy Version** | Version identifier of the canonical policy embedded in this DCP block. | nda-v4.1, 2026-Q1 |
 | **Policy As-Of** | Date the canonical policy was last synced into this DCP block. | 2026-02-15 |
+| **Policy Check** | Plain-text instruction telling AI tools to verify policy freshness before working with the document, when a policy server or policy source is available. | (See below) |
 
 ### Structured Fields
 
@@ -152,6 +153,23 @@ Policy Source:    contoso/legal-policies/nda-policy
 Policy Version:   nda-v4.1
 Policy As-Of:     2026-02-15
 ```
+
+### Policy Check
+
+The `Policy Source`, `Policy Version`, and `Policy As-Of` fields tell tooling *where* to check and *what version* is embedded. But they don't tell the AI to actually perform the check. An AI tool might read those fields and do nothing with them.
+
+The `Policy Check` field closes that gap. It is a plain-text instruction — written in natural language — that tells the AI to verify whether the embedded policy is still current before working with the document.
+
+```
+Policy Check:     Before reviewing this document, verify that the embedded
+                  policy is current. If a policy server is available, check
+                  the policy version against the latest. If the policy is
+                  outdated, note this before proceeding.
+```
+
+This is not a technical directive. The AI reads it the same way it reads any other DCP field — as context that shapes its behavior. If the AI has access to a policy server (via MCP or another integration), it follows the instruction. If it doesn't, it ignores the instruction and uses the embedded policy as-is. The self-contained principle is preserved: no functionality is lost, and no external access is required.
+
+Teams can customize the wording. The field value is freeform text. Some teams may want a stronger instruction ("Do not proceed until freshness is confirmed"); others may prefer a softer nudge ("If possible, check for policy updates before reviewing"). The key is that the instruction lives in the document, travels with it, and is visible to whatever AI tool opens it.
 
 ### Policy Files
 

@@ -44,6 +44,9 @@ Constraints:
   business owner decide
 - Do not reorganize the agreement structure
 - Preserve the counterparty's defined terms and numbering
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

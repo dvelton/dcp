@@ -29,6 +29,9 @@ Constraints:
 - Do not include detailed legal analysis — that belongs in the supporting memo
 - Do not use footnotes or endnotes
 - Do not hedge without offering a path to resolution
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

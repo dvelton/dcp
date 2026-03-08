@@ -41,6 +41,9 @@ Drafting Standards:
 - Structure follows Article 28(3) requirements
 - Include annexes for: (i) description of processing, (ii) technical and
   organizational measures, (iii) list of approved sub-processors
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

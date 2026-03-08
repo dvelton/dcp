@@ -27,6 +27,9 @@ Drafting Standards:
 - Flag blocking issues distinctly from advisory items
 - Reference specific regulatory requirements, not general principles
 - Include a clear disposition: Approved / Approved with Conditions / Not Approved
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

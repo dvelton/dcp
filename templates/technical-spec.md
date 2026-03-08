@@ -31,6 +31,9 @@ Drafting Standards:
 - Include concrete examples for non-obvious behavior, especially edge cases
 - Keep the spec updatable — use versioning and a changelog section
 - Reference existing systems and prior art where applicable
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

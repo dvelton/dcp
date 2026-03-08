@@ -29,6 +29,9 @@ Drafting Standards:
 - Number all sections and subsections
 - Include standard boilerplate: severability, waiver, entire agreement, counterparts
 - Plain English where possible — avoid unnecessary Latin or archaic phrasing
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

@@ -31,6 +31,9 @@ Drafting Standards:
   page should understand the compliance posture, key risks, and required actions
 - Avoid qualifying language that obscures the finding — "appeared to" or
   "seemed to" should be replaced with definitive statements supported by evidence
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

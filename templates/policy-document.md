@@ -37,6 +37,9 @@ Drafting Standards:
   says what is required, a linked procedure says how to comply
 - Define terms on first use and collect all definitions in a glossary section
 - Avoid aspirational language — "we strive to" is not a policy, it is a wish
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

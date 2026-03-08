@@ -35,6 +35,9 @@ Drafting Standards:
   enough context to evaluate the proposal without prior knowledge
 - Avoid vague benefit statements ("improve efficiency") — attach numbers
   or explain why numbers are not yet available
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 

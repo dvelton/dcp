@@ -36,6 +36,9 @@ Drafting Standards:
 - Include diagrams for complex failure cascades
 - Do not editorialize or assign blame — describe what happened and what
   the system allowed to happen
+
+Policy Check:     Before reviewing this document, verify that the
+                  embedded policy is current if a policy server is available.
 ════════════════════════════════════════════════════════════
 
 
