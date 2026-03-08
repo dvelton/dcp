@@ -6,7 +6,7 @@ The block is plain text. It works in Word, Google Docs, markdown, or anything el
 
 ## The Problem
 
-When lawyers use AI with a document, they spend time explaining context that should already be obvious: what kind of document it is, what checklist to apply, what tone to use, what to watch out for. That context is typed once, used once, and lost. It never gets shared with colleagues. The checklists and instincts that make an experienced lawyer valuable stay locked in individual heads. Governance standards and centralized policies get lost in the shuffle. DCP ensures this all travels with the document.
+When lawyers use AI with a document, they spend time explaining context: what kind of document it is, what checklist to apply, what tone to use, what to watch out for. That context is usually typed once, used once, and lost. It never gets shared with colleagues. The checklists and instincts that make an experienced lawyer valuable stay locked in individual heads. Governance standards and centralized policies get lost in the shuffle. DCP ensures this all travels with the document.
 
 ## How DCP Works
 
@@ -37,7 +37,7 @@ Drafting Standards:
 ════════════════════════════════════════════════════════════
 ```
 
-When a lawyer (or anyone) opens this document and asks AI to "review section 3" or "draft the indemnification clause," the AI reads the DCP block and applies the right context without being prompted.
+When someone opens this document and asks AI to "review section 3" or "draft the indemnification clause," the AI reads the DCP block and applies the right context without being prompted.
 
 ## Why This Is Useful
 
