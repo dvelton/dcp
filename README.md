@@ -6,7 +6,7 @@ The block is plain text. It works in Word, Google Docs, markdown, or anything el
 
 ## The Problem
 
-When lawyers use AI with a document, they spend time explaining context that should already be obvious: what kind of document it is, what checklist to apply, what tone to use, what to watch out for. That context is typed once, used once, and lost. It never gets shared with colleagues. The checklists and instincts that make an experienced lawyer valuable stay locked in individual heads.
+When lawyers use AI with a document, they spend time explaining context that should already be obvious: what kind of document it is, what checklist to apply, what tone to use, what to watch out for. That context is typed once, used once, and lost. It never gets shared with colleagues. The checklists and instincts that make an experienced lawyer valuable stay locked in individual heads. Governance standards and centralized policies get lost in the shuffle. DCP ensures this all travels with the document.
 
 ## How DCP Works
 
@@ -37,7 +37,7 @@ Drafting Standards:
 ════════════════════════════════════════════════════════════
 ```
 
-When a lawyer opens this document and asks AI to "review section 3" or "draft the indemnification clause," the AI reads the DCP block and applies the right context without being prompted.
+When a lawyer (or anyone) opens this document and asks AI to "review section 3" or "draft the indemnification clause," the AI reads the DCP block and applies the right context without being prompted.
 
 ## Why This Is Useful
 
@@ -49,7 +49,7 @@ Because DCP blocks are plain text, they work with any AI tool that reads documen
 
 ## Keeping Policies Current
 
-DCP blocks are self-contained by design. But policies change, and when a team updates its NDA checklist to add a new regulatory requirement, that update only reaches documents created after the change.
+DCP blocks are self-contained by design. But policies change, and when a team updates its centralized NDA checklist to add a new regulatory requirement, that update only reaches documents created after the change.
 
 Three optional fields handle this: `Policy Source`, `Policy Version`, and `Policy As-Of`. These record where the embedded policy came from and when it was last synced. They're metadata, not dependencies. If an AI tool can reach the policy source, it can check whether the document's policy is current and alert the user. If it can't, the embedded DCP block works exactly as it always has.
 
@@ -116,17 +116,6 @@ The validator checks for correct delimiters, the required header line, required 
 ## Examples
 
 See the [before/after comparison](examples/before-after.md) for a side-by-side look at what DCP changes in practice.
-
-## FAQ
-
-**Does DCP work with Word documents?**
-Yes. Place the DCP block at the top of your document. Microsoft 365 Copilot reads it as part of the document content. For team-wide use, save DCP-enabled documents as Word templates (.dotx).
-
-**Does the DCP block appear in the final document?**
-Up to you. Some teams keep it visible as a quality reference. Others move it to a text box or collapsible section before finalizing. The block is for drafting and review; how you handle it in the final version is a team decision.
-
-**How is this different from writing a prompt?**
-A prompt is typed once and lost. A DCP block lives in the document template, gets used every time that document type is created, and gets shared across the team. It accumulates refinements over time.
 
 ## Further Reading
 
