@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dcp-mcp"
+version = "0.1.0"
+description = "MCP server for the Document Context Protocol — live policy access and validation for AI clients"
+readme = "README.md"
+license = {text = "CC-BY-4.0"}
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dcp_mcp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

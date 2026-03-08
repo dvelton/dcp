@@ -126,6 +126,14 @@ See the [before/after comparison](examples/before-after.md) for a side-by-side l
 
 DCP is open to contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+## Take It Further: DCP-MCP
+
+DCP travels with your document. DCP-MCP brings your policies to life.
+
+The [dcp-mcp](/dcp-mcp) companion server exposes your DCP templates as live MCP resources. Connect any MCP-compatible AI client once, and your AI has authoritative, versioned access to every policy in your library — locally or across your whole team.
+
+[Setup instructions](/dcp-mcp/README.md)
+
 ## License
 
 [MIT](LICENSE)
